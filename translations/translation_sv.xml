@@ -545,7 +545,7 @@
         <text name="ar_set_herdAdviser_tt"    text="Husbandry Reduxs förslag: de två rådlinjerna på ladugårdspanelen och REKOMMENDATION-kolumnen på fliken Animals. Av döljer dem. Alla siffror de bygger på förblir på skärmen."/>
 
         <text name="ar_set_advancedFeeder"    text="Avancerad foderautomatik"/>
-        <text name="ar_set_advancedFeeder_tt" text="Husbandry Redux räknar ut vilket foder varje ladugård faktiskt behöver och ber Distribution Redux om det, och varje ladugård kan slås på eller av på fliken Grisar. Av lämnar tillbaka varje ladugård till Distribution Reduxs egna leveransregler. Har ingen effekt medan Distribution Reduxs djurhållningsutfodring är avstängd - då utfodras inget automatiskt."/>
+        <text name="ar_set_advancedFeeder_tt" text="Husbandry Redux räknar ut vilket foder varje ladugård faktiskt behöver och ber Distribution Redux om det, och för varje ladugård kan du slås på eller av för varje djur sort. Av lämnar tillbaka varje ladugård till Distribution Reduxs egna leveransregler. Har ingen effekt medan Distribution Reduxs djurhållningsutfodring är avstängd - då utfodras inget automatiskt."/>
         <text name="ar_hi_feed_on"            text="Avancerad utfodring: På"/>
         <text name="ar_hi_feed_off"           text="Avancerad utfodring: Av"/>
         <text name="ar_hi_feed_drOff"         text="DR:s djurhållningsutfodring är av - inget utfodras automatiskt"/>
