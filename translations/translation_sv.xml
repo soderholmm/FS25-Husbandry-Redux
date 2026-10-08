@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!-- ===========================================================================
-     Animal Redux, SVENSKA. Detta är en översättning av den engelska referensfilen.
+     Husbandry Redux, SVENSKA. Detta är en översättning av den engelska referensfilen.
 
      LÄGGA TILL ETT SPRÅK
        Kopiera denna fil till translation_<kod>.xml (translation_de.xml,
@@ -46,10 +46,10 @@
      =========================================================================== -->
 <l10n>
     <texts>
-        <text name="input_ANIMALREDUX_OPEN_MANAGER" text="Öppna Animal Redux-menyn"/>
-        <text name="ar_input_openMenu"      text="Animal Redux-meny"/>
-        <text name="ar_title_settings"      text="ANIMAL REDUX - INSTÄLLNINGAR"/>
-        <text name="ar_title_help"          text="ANIMAL REDUX - ANVÄNDARGUIDE"/>
+        <text name="input_ANIMALREDUX_OPEN_MANAGER" text="Öppna Husbandry Redux-menyn"/>
+        <text name="ar_input_openMenu"      text="Husbandry Redux-meny"/>
+        <text name="ar_title_settings"      text="HUSBANDRY REDUX - INSTÄLLNINGAR"/>
+        <text name="ar_title_help"          text="HUSBANDRY REDUX - ANVÄNDARGUIDE"/>
         <!-- Självtest. Löses en gång vid laddning så en trasig översättningskedja
              rapporteras i log.txt omedelbart, istället för att dyka upp senare som
              mystiskt oöversatt UI. Värdet matchas i koden, så LÄMNA DET SOM "ok"
@@ -75,15 +75,18 @@
         <!-- TRADE-vy. Stomme: dessa är de fakta som säljreglerna byggs av.
              Budgetar vid 12px: factor 50, value 30, meaning 87. -->
 
-        <!-- ================= BOSKAPS ÖVERSIKT (den andra Animals-fliken) =========
+        <!-- ================= BOSKAPSÖVERSIKT (den andra Animals-fliken) =========
              hi_col_* är tabellrubriker med fast bredd och KLIPPAS, inte bryts.
              Budgetar: animal 130 / barn 220 / count 60 / age 60 / health 70 /
              repro 120 / litres 100 / each 100 / total 134 px vid 11px text, så
              cirka 16 tecken per 100px. Håll dem korta. -->
         <text name="ar_hi_panelTitle"       text="DJUR, FODER OCH BOSKAPSVÄRDE"/>
-        <text name="ar_hi_page_title"         text="ANIMAL REDUX - BOSKAPS ÖVERSIKT"/>
-        <text name="ar_hi_page_title_barn"    text="ANIMAL REDUX - LADUGÅRDS ÖVERSIKT"/>
+        <text name="ar_hi_page_title"         text="HUSBANDRY REDUX - BOSKAPSÖVERSIKT"/>
         <text name="ar_hi_tab_title"          text="Boskapsöversikt"/>
+        <text name="ar_hi_page_title_overview" text="Översikt"/>
+        <text name="ar_act_more"               text="(+%d till)"/>
+        <text name="ar_act_purpose"            text="Bättre som %s"/>
+        <text name="ar_hi_col_action"          text="NÄSTA ÅTGÄRD"/>
         <text name="ar_hi_view_groups"        text="Djur"/>
         <!-- RASVYN: vad denna ladugård håller varje ras FÖR. Fliknamnet delar
              ett 146px-utrymme med de andra två, så håll det till cirka 12
@@ -94,15 +97,66 @@
         <text name="ar_hi_col_keptFor"        text="HÅLLS FÖR"/>
         <!-- MOTORNs åsikt, i en egen kolumn så den kan särskiljas från
              spelarens svar bredvid. -->
-        <text name="ar_hi_col_advice"         text="RÅD"/>
         <!-- domen OCH varför, i cirka 48 tecken. noOutput läser helt annorlunda
              än calvesWorthMore även om båda säger Uppfödare. -->
+        <text name="ar_hi_order_every"       text="Sälj %d var %d:e mån, från %d mån"/>
+        <text name="ar_hi_order_once"        text="Sälj %d om %d mån"/>
+        <text name="ar_hi_order_now"         text="Sälj %d nu"/>
         <text name="ar_hi_adviceWhy"          text="%s - %s"/>
         <text name="ar_hi_why_outputBeats"    text="produktionen överstiger kalvarna"/>
         <text name="ar_hi_why_calvesWorth"    text="kalvarna värda mer än produktionen"/>
         <text name="ar_hi_why_noOutput"       text="producerar inget säljbart"/>
         <text name="ar_hi_why_nothingToWeigh" text="inget att väga åt endera hållet"/>
-        <text name="ar_hi_page_title_breeds"  text="ANIMAL REDUX - RASER"/>
+        <text name="ar_hi_page_title_breeds"  text="HUSBANDRY REDUX - RASER"/>
+        <text name="ar_hi_page_title_pigs"    text="HUSBANDRY REDUX - GRISAR"/>
+        <text name="ar_hi_view_pigs"          text="Grisar"/>
+        <text name="ar_hi_view_cows"          text="Kor"/>
+        <text name="ar_hi_page_title_cows"    text="HUSBANDRY REDUX - KOR"/>
+        <text name="ar_hi_view_sheep"           text="Får"/>
+        <text name="ar_hi_view_horses"          text="Hästar"/>
+        <text name="ar_hi_view_chickens"        text="Höns"/>
+        <text name="ar_hi_view_other"           text="Övriga"/>
+        <text name="ar_hi_page_title_sheep"     text="HUSBANDRY REDUX - FÅR"/>
+        <text name="ar_hi_page_title_horses"    text="HUSBANDRY REDUX - HÄSTAR"/>
+        <text name="ar_hi_page_title_chickens"  text="HUSBANDRY REDUX - HÖNS"/>
+        <text name="ar_hi_page_title_other"     text="HUSBANDRY REDUX - ÖVRIGA DJUR"/>
+        <text name="ar_hi_col_trade"          text="Handel"/>
+        <text name="ar_hi_group_ration"       text="Fullständig ranson"/>
+        <text name="ar_hi_btn_trader"         text="Handlare"/>
+        <text name="ar_hi_pig_keep"           text="Behåll djur"/>
+        <text name="ar_hi_prod_sellNow"       text="Sälj nu - de kostar mer än de tjänar"/>
+        <text name="ar_hi_prod_sellAt"        text="Sälj vid %s (om %s)"/>
+        <text name="ar_hi_pig_sell"           text="Sälj %s, var %s:e, med start om %s"/>
+        <text name="ar_hi_pig_sellNow"        text="Sälj %s, var %s:e, med start nu"/>
+        <text name="ar_hi_unit_animal"        text="%d djur"/>
+        <text name="ar_hi_unit_animals"       text="%d djur"/>
+        <text name="ar_hi_unit_month"         text="%d månad"/>
+        <text name="ar_hi_unit_months"        text="%d månader"/>
+        <text name="ar_adv_birth_loseNext"    text="%d födslar förlorade om %d mån - ingen plats"/>
+        <text name="ar_adv_birth_sufficient"  text="Tillräckligt med plats för nya födslar"/>
+        <text name="ar_adv_feed_optimal"      text="Foder 100% - hälsa och produktivitet på topp"/>
+        <text name="ar_adv_feed_listAnd"      text="%s och %s"/>
+        <text name="ar_adv_feed_falling"      text="Hälsan sjunker - tillsätt %s nu"/>
+        <text name="ar_adv_feed_frozen"       text="Hälsan är fryst - tillsätt %s"/>
+        <text name="ar_adv_feed_recover"      text="Tillsätt %s för att återställa hälsa och produktivitet"/>
+        <text name="ar_adv_feed_full"         text="Tillsätt %s för full produktivitet"/>
+        <text name="ar_adv_value_gain"        text="Går med vinst"/>
+        <text name="ar_adv_value_loss"        text="Förlust - foder kostar mer än besättningen tjänar"/>
+        <text name="ar_adv_value_loss_health" text="Förlust - utfodra full ranson för att återställa hälsan"/>
+        <text name="ar_adv_value_loss_births" text="Förlust - sälj djur för att göra plats för födslar"/>
+        <text name="ar_adv_value_loss_switch" text="Förlust - byt till %s-foder för att minska insatskostnaden"/>
+        <text name="ar_adv_birth_saleIn"      text="Säljer %d om %d mån"/>
+        <text name="ar_adv_birth_saleNow"     text="Säljer %d nu"/>
+        <text name="ar_alert_health"          text="%s: djurens hälsa har sjunkit till %d%%"/>
+        <text name="ar_alert_loss"            text="%s: går nu med förlust"/>
+        <text name="ar_adv_feed_recovering"   text="Full ranson - hälsan återhämtar sig till 100%"/>
+        <text name="ar_adv_feed_maintainCheaper" text="Hälsa 100%% - utfodra %s för att hålla den till lägre kostnad"/>
+        <text name="ar_adv_feed_maintainAdd"  text="Utfodra %s för att hålla hälsan vid 100%%"/>
+        <text name="ar_adv_feed_maintainOk"   text="Hälsa 100%% - %s håller den till lägsta kostnad"/>
+        <text name="ar_adv_value_loss_ration" text="Förlust - komplettera ransonen för att öka produktionen"/>
+        <text name="ar_adv_value_loss_productivity" text="Förlust - förbättra produktiviteten för att sälja mer"/>
+        <text name="ar_adv_value_loss_pastPeak" text="Förlust - sälj djur efter toppvärdet"/>
+        <text name="ar_bs_breedUnmatched"     text="Kunde inte avgöra vilka handlardjur som är denna ras, så alla visas."/>
         <!-- VAD DENNA SIFFRA ÄR, exakt: djurets egen månatliga produktion värderad till
              DAGENS försäljningspris (economyManager:getPricePerLiter), per djur, före
              strökostnad och före eventuell produktionskedja den kan mata. Såld gödsel
@@ -134,15 +188,12 @@
              lägga till det: MENU_EXTRA_1 och EXTRA_2 är de enda lediga
              sidfotsåtgärderna spelet har, så en sida kan visa två åt gången och
              inte fler. -->
-        <text name="ar_hi_btn_sellRules"      text="Sälj Regler"/>
-        <text name="ar_hi_btn_buyRules"       text="Köp Regler"/>
-        <text name="ar_hi_buyRulesTodo"       text="Köp regler är inte byggda än. Köp har ingen motor som väljer åt dig, så dess regler är skydd snarare än policy - och den enda värt att ha, en kontantgräns, tillhör gården snarare än en enskild ras."/>
 
         <!-- ================= FÖNSTRET SÄLJREGLER =======================
              En ladugårds-ras regler. Etiketterna sitter i en 640px-kolumn vid 13px,
              så cirka 70 tecken; hjälpmeningarna har en 1296px-rad över två
              rader och kan vara en mening. -->
-        <text name="ar_rul_title"             text="Animal Redux - Säljregler"/>
+        <text name="ar_rul_title"             text="Husbandry Redux - Säljregler"/>
         <text name="ar_rul_subtitle"          text="%s  -  %s"/>
         <text name="ar_rul_btnReset"          text="Återställ till standard"/>
         <text name="ar_rul_btnClose"          text="Stäng"/>
@@ -154,11 +205,11 @@
 
         <!-- FRÅGORNA. Varje besättning tillfrågas med sitt eget ordförråd: en
              producerande besättning håller VUXNA och säljer nyfödda, en
-             uppfödande håller UPPFÖDARE och kan drivas som en plantskola. De är
+             uppfödande håller UPPFÖDARE och kan drivas som uppfödning. De är
              samma två motorregler ställda på det sätt varje besättningsägare
              skulle uttrycka det. -->
         <text name="ar_rul_sellNewborns"      text="Sälj nyfödda"/>
-        <text name="ar_rul_runAsNursery"      text="Driv som plantskola"/>
+        <text name="ar_rul_runAsNursery"      text="Driv som uppfödning"/>
         <text name="ar_rul_sellAtPeak"        text="Sälj vid toppen"/>
         <text name="ar_rul_headroomWorthIt"   text="Gör bara plats när det lönar sig"/>
         <text name="ar_rul_keepAdults"        text="Gå aldrig under (vuxna)"/>
@@ -176,7 +227,6 @@
         <text name="ar_rul_help_keepFreeSlots"   text="Håll detta antal båsplatser lediga för nyfödda. Lediga platser delas av alla raser i ladugården, så denna inställning gäller hela ladugården."/>
         <text name="ar_hi_purpose_producer"   text="Producenter"/>
         <text name="ar_hi_purpose_breeder"    text="Uppfödare"/>
-        <text name="ar_hi_view_barn"          text="Ladugårdar"/>
         <text name="ar_hi_filter_all"         text="Alla djur"/>
         <!-- PERIODVÄLJAREN ÄR SIDANS ENDA ENHETSFÖRKLARING, så dessa tre
              strängar bär ett jobb som kolumnrubrikerna brukade göra. Håll dem korta:
@@ -202,7 +252,8 @@
         <text name="ar_hi_col_foodGroup"      text="FODERGRUPP"/>
         <text name="ar_hi_col_held"           text="INNEHAV"/>
         <text name="ar_hi_col_needs"          text="BEHOV"/>
-        <text name="ar_hi_col_costPerH"       text="KOSTNAD"/>
+        <text name="ar_hi_col_used"           text="ANVÄNT"/>
+        <text name="ar_hi_col_costPerH"       text="KOSTNAD OM ALLT"/>
         <text name="ar_hi_col_costNow"        text="KOSTNAD NU"/>
         <text name="ar_hi_group_bedding"      text="Strö"/>
         <text name="ar_hi_group_water"        text="Vatten"/>
@@ -211,9 +262,9 @@
              så håll dem under cirka 30 tecken; tomma-tillstånd-meningarna har
              en 760px-rad och kan vara en mening. -->
         <text name="ar_hi_btn_trade"          text="Köp / Sälj"/>
-        <text name="ar_td_title"              text="Animal Redux - Köp / Sälj"/>
-        <text name="ar_td_title_buy"          text="Animal Redux - Köp djur"/>
-        <text name="ar_td_title_sell"         text="Animal Redux - Sälj djur"/>
+        <text name="ar_td_title"              text="Husbandry Redux - Köp / Sälj"/>
+        <text name="ar_td_title_buy"          text="Husbandry Redux - Köp djur"/>
+        <text name="ar_td_title_sell"         text="Husbandry Redux - Sälj djur"/>
         <text name="ar_td_mode_sell"          text="SÄLJ DJUR"/>
         <text name="ar_td_mode_buy"           text="KÖP DJUR"/>
         <text name="ar_td_noBarn"             text="ingen ladugård"/>
@@ -250,33 +301,33 @@
         <text name="ar_td_bought"             text="Köpte %d."/>
         <text name="ar_td_failed"             text="Nekad: %s"/>
         <text name="ar_hi_auto"               text="auto"/>
-        <text name="ar_hi_col_product"        text="PRODUKT"/>
+        <text name="ar_hi_col_productIn"      text="INKOMMANDE PRODUKTER"/>
+        <text name="ar_hi_col_productOut"     text="UTGÅENDE PRODUKTER"/>
+        <text name="ar_hi_col_produced"       text="PRODUCERAT"/>
+        <text name="ar_hi_col_source"         text="KÄLLA"/>
+        <text name="ar_hi_col_madeRate"       text="TAKT"/>
+        <text name="ar_hi_group_mix"          text="Blandningsingrediens"/>
+        <text name="ar_hi_group_mixed"        text="Blandfoder"/>
+        <text name="ar_hi_group_grazed"       text="Äng"/>
         <text name="ar_hi_col_prodRate"       text="PROD. TAKT"/>
-        <text name="ar_hi_col_rec"            text="REKOMMENDATION"/>
         <!-- REKOMMENDATIONSMENINGARNA. Kolumnen är 204px vid 12px, så håll varje
              under cirka 34 tecken: denna cell TRIMMAR, den bryter inte, och en
              trunkerad dom är sämre än en kortare (5.55). %s är pengar, %d ett
              antal eller ett antal månader. -->
-        <text name="ar_hi_rec_calf"           text="Sälj nyfödda - plantskola lönar sig mer"/>
-        <text name="ar_hi_rec_headroom"       text="Sälj %d - båset fullt, födslar förlorade"/>
-        <text name="ar_hi_rec_peak"           text="Sälj - efter toppen, förlorar %s / mån"/>
-        <text name="ar_hi_rec_plan"           text="Sälj %d - se fliken Animals"/>
-        <text name="ar_hi_rec_unwell"         text="Utfodra - för sjuk för fortplantning (%d%%)"/>
-        <text name="ar_hi_rec_young"          text="Behåll - producerar om %d mån"/>
-        <text name="ar_hi_rec_growing"        text="Behåll - växer fortfarande"/>
-        <text name="ar_hi_rec_appreciating"   text="Behåll - ökar %s / mån"/>
-        <text name="ar_hi_rec_outearns"       text="Behåll - tjänar %s / mån över nedgång"/>
-        <text name="ar_hi_rec_declining"      text="Sälj - gammal, förlorar %s / mån"/>
-        <text name="ar_hi_rec_steady"         text="Behåll - stadig inkomst, %s / mån"/>
-        <text name="ar_hi_rec_unprofitable"   text="Sälj - kostar mer än det tjänar"/>
-        <text name="ar_hi_rec_unknown"        text="-"/>
 
         <!-- DE TVÅ PANELRÅDSRADERNA. Budgetar skiljer sig och båda TRIMMAR
              snarare än att bryta när de blir för långa: foderraden är 480px vid
              11px (cirka 80 tecken, en rad) och födelseraden är 108px över två
              (cirka 36 totalt). %s är en grupp och dess produkter, %d ett antal. -->
-        <text name="ar_adv_feed_ok"           text="Foderfaktor 100% - ingen åtgärd behövs"/>
-        <text name="ar_adv_feed_provide"      text="Tillhandahåll %s för att öka produktiviteten"/>
+        <text name="ar_adv_feed_best"        text="Bästa ransonen redan - ingen åtgärd behövs"/>
+        <text name="ar_adv_feed_best_named" text="Bästa ransonen redan: %s"/>
+        <text name="ar_adv_feed_switch"      text="Byt till %s"/>
+        <text name="ar_adv_feed_switch_gain" text="Byt till %s: %s / mån"/>
+        <text name="ar_adv_feed_deadzone"    text="Fodret för tunt - hälsan FRYST. Utfodra %s"/>
+        <text name="ar_adv_feed_decay"       text="Hälsan SJUNKER - utfodra %s nu"/>
+        <text name="ar_adv_feed_nofloor"     text="Ingen ranson här kan återställa hälsan - kontrollera tråget"/>
+        <text name="ar_adv_feed_noprofit"    text="Foder kostar mer än produktionen vid varje nivå (%s / mån)"/>
+        <text name="ar_adv_feed_subsidy"     text="Produktionen täcker inte fodret - billigast är %s"/>
         <text name="ar_adv_feed_grazing"      text="Bete - ängen utfodrar dem"/>
         <text name="ar_adv_birth_sell"        text="Sälj %d för att frigöra platser för födslar"/>
         <text name="ar_adv_birth_lost"        text="%d födslar förlorade - båset är fullt"/>
@@ -312,6 +363,7 @@
         <text name="ar_bs_colEvery"     text="VARJE"/>
         <text name="ar_bs_colProgress"  text="UTFÖRT"/>
         <text name="ar_bs_colNext"      text="NÄSTA"/>
+        <text name="ar_bs_colNextSale"  text="NÄSTA FÖRSÄLJNING"/>
         <text name="ar_bs_hdrOrder"     text="ORDERN"/>
         <!-- EN ETIKETT PER TRANSAKTION. Att namnge transaktionen innebär att namnge
              vilken, så dessa delas som paret "Köp varje" / "Sälj varje" gör. -->
@@ -379,30 +431,30 @@
         <text name="ar_bs_colWhatSell"  text="STÅENDE FÖRSÄLJNING"/>
         <text name="ar_bs_everySell"    text="Månader mellan försäljningar:"/>
         <text name="ar_bs_lblExpected"  text="Totalt förväntat"/>
-        <!-- PRODUCENT KONTRA PLANTISKOLA-DOMEN, som motorn har beräknat på varje
-             plan sedan plantskoleregeln släpptes och aldrig visat. Diagnostiskt
+        <!-- PRODUCENT KONTRA UPPFÖDNING-DOMEN, som motorn har beräknat på varje
+             plan sedan uppfödningsregeln släpptes och aldrig visat. Diagnostiskt
              först: den säger vad modellen redan drar för slutsats om en ladugård,
              så spelaren kan kontrollera det mot vad de faktiskt håller den
              ladugården för. Värdecellen är 118px vid 13px, så de två ORDEN får
              cirka 15 tecken; meningarna sitter på en 1096px-notrad och kan andas. -->
         <text name="ar_bs_lblUse"        text="Tjänar mest som"/>
         <text name="ar_bs_useAdult"      text="Producenter"/>
-        <text name="ar_bs_useNursery"    text="Plantskola"/>
-        <text name="ar_bs_slotAdult"     text="Denna ladugård tjänar mest på PRODUCENTER: %s/mån, mot %s/mån som plantskola."/>
-        <text name="ar_bs_slotNursery"   text="Denna ladugård tjänar mest som PLANTSKOLA: %s/mån, mot %s/mån från producenter."/>
+        <text name="ar_bs_useNursery"    text="Uppfödning"/>
+        <text name="ar_bs_slotAdult"     text="Denna ladugård tjänar mest på PRODUCENTER: %s/mån, mot %s/mån som uppfödning."/>
+        <text name="ar_bs_slotNursery"   text="Denna ladugård tjänar mest som UPPFÖDNING: %s/mån, mot %s/mån från producenter."/>
         <!-- INGEN DOM ÄR I SIG ETT FYND, så den namnger den term som saknas
              snarare än att visa ett streck. -->
-        <text name="ar_bs_slotNone"      text="Ingen producent/plantskola-dom för denna ladugård: %s"/>
+        <text name="ar_bs_slotNone"      text="Ingen producent/uppfödnings-dom för denna ladugård: %s"/>
         <text name="ar_bs_slotGapEmpty"  text="ladugården har inga djur att bedöma."/>
         <text name="ar_bs_slotGapMargin" text="dess djur har ingen prissatt månatlig produktion, så det finns inget att väga en kalv mot."/>
         <text name="ar_bs_slotGapBirth"  text="en nyfödd av detta djur kunde inte prissättas."/>
-        <text name="ar_bs_slotGapCycle"  text="detta djur deklarerar ingen fortplantningscykel, så en plantskola har ingen takt."/>
+        <text name="ar_bs_slotGapCycle"  text="detta djur deklarerar ingen fortplantningscykel, så en uppfödning har ingen takt."/>
         <text name="ar_bs_lblAnimals"   text="Djur"/>
         <text name="ar_bs_lblNow"       text="Intäkt nu"/>
         <text name="ar_bs_addedSell"    text="Tillagd: sälj %d, %s. Ställ in dess regler på fliken SÄLJREGLER."/>
         <text name="ar_bs_removedSell"  text="Borttagen: sälj %d"/>
         <text name="ar_bs_planNothing"  text="Dessa regler skulle inte sälja något i denna ladugård just nu."/>
-        <text name="ar_bs_notLive"      text="Automatisk försäljning är inte påslagen än - använd Sälj nu för att köra reglerna en gång."/>
+        <text name="ar_bs_sellRunsAt"   text="Säljer inom timmen när den förfaller - ställ in den för månaden före födslarna så de har plats."/>
 
         <!-- policyväxlarna, en per AnimalSellRules.DEFAULTS-nyckel som panelen
              exponerar. Bijektionen är fastställd av tools/animalsell.lua. -->
@@ -411,7 +463,7 @@
         <text name="ar_pol_headroomWorthIt" text="Gör bara plats om det lönar sig"/>
         <text name="ar_pol_minHealthToSell" text="Sälj aldrig en besättning under"/>
         <text name="ar_pol_keepBreeders"    text="Gå aldrig under (uppfödare)"/>
-        <text name="ar_pol_sellCalves"      text="Sälj nyfödda (plantskola)"/>
+        <text name="ar_pol_sellCalves"      text="Sälj nyfödda (uppfödning)"/>
         <text name="ar_pol_on"          text="På"/>
         <text name="ar_pol_off"         text="Av"/>
         <text name="ar_pol_noFloor"     text="Ingen gräns"/>
@@ -423,7 +475,7 @@
              snarare än tyst som ingenting. -->
         <text name="ar_reason_headroom" text="för att göra plats för födslar"/>
         <text name="ar_reason_peak"     text="vid toppvärde"/>
-        <text name="ar_reason_calf"     text="nyfödd (plantskola)"/>
+        <text name="ar_reason_calf"     text="nyfödd (uppfödning)"/>
         <text name="ar_reason_earnings" text="tjänar mindre än det förlorar"/>
         <text name="ar_reason_order"    text="stående order"/>
         <!-- regelsammanfattningen som bärs på varje orders rad. UTLÖSARE endast:
@@ -431,7 +483,7 @@
              en, så att namnge dem bredvid dessa skulle läsas som orsaker att sälja. -->
         <text name="ar_pol_sum_peak"    text="Topp"/>
         <text name="ar_pol_sum_births"  text="Födslar"/>
-        <text name="ar_pol_sum_nursery" text="Plantskola"/>
+        <text name="ar_pol_sum_nursery" text="Uppfödning"/>
         <text name="ar_pol_sum_none"    text="inga regler"/>
         <text name="ar_bs_colRules"     text="REGLER"/>
         <text name="ar_bs_orderTitle"     text="#%d  Sälj %d %s"/>
@@ -455,7 +507,7 @@
         <text name="ar_pol_help_headroomWorthIt" text="Gör bara plats för födslar när det sålda djuret är värt mindre än den kalv det skulle föda upp. Stäng av detta för att alltid göra plats, även med förlust."/>
         <text name="ar_pol_help_minHealthToSell" text="Sälj aldrig medan BESÄTTNINGENS medelhälsa är under detta. En sjuk besättning ger så lite som 40% av bokfört värde, så att utfodra den först är värt mer än någon försäljning."/>
         <text name="ar_pol_help_keepBreeders"    text="Ta aldrig ladugården under detta antal avelsdjur, så att den alltid kan fylla på sig själv."/>
-        <text name="ar_pol_help_sellCalves"      text="Driv ladugården som plantskola: sälj varje nyfödd istället för att föda upp den. En försäljning per fortplantningscykel, från en plats som aldrig behöver hålla ett vuxet djur."/>
+        <text name="ar_pol_help_sellCalves"      text="Driv ladugården som uppfödning: sälj varje nyfödd istället för att föda upp den. En försäljning per fortplantningscykel, från en plats som aldrig behöver hålla ett vuxet djur."/>
 
         <!-- varför en plan kom tillbaka tom. Motorn avger en nottyp; formuleringen
              är vår, eftersom den modulen är ren. -->
@@ -463,9 +515,9 @@
         <text name="ar_note_blocked"    text="Uppfödargränsen stoppar det - sänk Gå aldrig under (uppfödare)."/>
         <text name="ar_note_held"       text="Besättningen är under hälsogränsen - utfodra, eller sänk Sälj aldrig en besättning under."/>
         <text name="ar_note_unsellable" text="Inget här kan säljas just nu."/>
-        <text name="ar_note_nursery"    text="Denna ladugård skulle tjäna mer som plantskola - slå på Sälj nyfödda."/>
+        <text name="ar_note_nursery"    text="Denna ladugård skulle tjäna mer som uppfödning - slå på Sälj nyfödda."/>
 
-        <!-- INSTÄLLNINGAR, visas som en ANIMAL REDUX-flik på Distribution Reduxs
+        <!-- INSTÄLLNINGAR, visas som en HUSBANDRY REDUX-flik på Distribution Reduxs
              egna inställningssida. Titlar sitter i en kolumn med fast bredd och
              verktygstexten är den enda platsen med utrymme att förklara, så titeln
              hålls kort och verktygstexten bär konsekvensen.
@@ -474,26 +526,32 @@
         <!-- ANVÄNDARGUIDE-FLIKEN. Brödtexten är en lång rad per stycke med avsikt:
              sidan bryter rader efter sin egen kolumnräkning, så ett handbrutet
              stycke blir ojämnt. "## " startar en underrubrik. -->
-        <text name="ar_help_tab"           text="ANIMAL REDUX"/>
+        <text name="ar_help_tab"           text="HUSBANDRY REDUX"/>
+        <text name="ar_overview_tab"       text="HUSBANDRY REDUX"/>
+        <text name="ar_legacy_warning" text="%s har bytt namn till Husbandry Redux.&#10;&#10;Den gamla modden (%s) är fortfarande installerad och båda körs, så allt kommer att visas två gånger.&#10;&#10;Avsluta till huvudmenyn, ta bort den modden från din mods-mapp och ladda igen. Dina djurdata sparas."/>
+        <text name="ar_overview_placeholder" text="Under uppbyggnad"/>
 
-        <text name="ar_set_tab"            text="ANIMAL REDUX"/>
+        <text name="ar_set_tab"            text="HUSBANDRY REDUX"/>
         <text name="ar_set_off"            text="Av"/>
         <text name="ar_set_on"             text="På"/>
 
         <text name="ar_set_trading"        text="Köp / Sälj djur"/>
-        <text name="ar_set_trading_tt"     text="Köpa och sälja djur manuellt från Besiktningen. Av tar bort knappen Köp / Sälj. Stående order påverkas inte - stäng av Auto-handlaren för dem."/>
+        <text name="ar_set_trading_tt"     text="Köpa och sälja djur manuellt från Boskapsöversikten. Av tar bort knappen Köp / Sälj. Stående order påverkas inte - stäng av Auto-handlaren för dem."/>
 
         <text name="ar_set_autoTrader"     text="Auto-handlare"/>
-        <text name="ar_set_autoTrader_tt"  text="Stående köp- och säljorder som körs automatiskt. Av tar bort knappen Auto-handlare och knapparna Säljregler och Köprregler, OCH RADERAR varje order du har ställt in. Du kommer att få bekräfta först."/>
+        <text name="ar_set_autoTrader_tt"  text="Stående köp- och säljorder som körs automatiskt. Av tar bort knappen Auto-handlare och knapparna Säljregler och Köpregler, OCH RADERAR varje order du har ställt in. Du kommer att få bekräfta först."/>
 
         <text name="ar_set_herdAdviser"       text="Besättningsrådgivare"/>
-        <text name="ar_set_herdAdviser_tt"    text="Animal Reduxs förslag: de två rådlinjerna på ladugårdspanelen och REKOMMENDATION-kolumnen på fliken Animals. Av döljer dem. Alla siffror de bygger på förblir på skärmen."/>
+        <text name="ar_set_herdAdviser_tt"    text="Husbandry Reduxs förslag: de två rådlinjerna på ladugårdspanelen och REKOMMENDATION-kolumnen på fliken Animals. Av döljer dem. Alla siffror de bygger på förblir på skärmen."/>
 
         <text name="ar_set_advancedFeeder"    text="Avancerad foderautomatik"/>
-        <text name="ar_set_advancedFeeder_tt" text="Animal Redux räknar ut vilket foder varje ladugård faktiskt behöver och ber Distribution Redux om det. Av lämnar tillbaka utfodringen till Distribution Reduxs egna leveransregler."/>
+        <text name="ar_set_advancedFeeder_tt" text="Husbandry Redux räknar ut vilket foder varje ladugård faktiskt behöver och ber Distribution Redux om det, och varje ladugård kan slås på eller av på fliken Grisar. Av lämnar tillbaka varje ladugård till Distribution Reduxs egna leveransregler. Har ingen effekt medan Distribution Reduxs djurhållningsutfodring är avstängd - då utfodras inget automatiskt."/>
+        <text name="ar_hi_feed_on"            text="Avancerad utfodring: På"/>
+        <text name="ar_hi_feed_off"           text="Avancerad utfodring: Av"/>
+        <text name="ar_hi_feed_drOff"         text="DR:s djurhållningsutfodring är av - inget utfodras automatiskt"/>
 
         <text name="ar_set_debug"          text="Debug-loggning"/>
-        <text name="ar_set_debug_tt"       text="Extra Animal Redux-rader i log.txt. Lämna detta avstängt om du inte rapporterar ett problem. Allt som faktiskt går fel loggas ändå."/>
+        <text name="ar_set_debug_tt"       text="Extra Husbandry Redux-rader i log.txt. Lämna detta avstängt om du inte rapporterar ett problem. Allt som faktiskt går fel loggas ändå."/>
         <text name="ar_set_passProfiler"    text="Prestandaloggning"/>
         <text name="ar_set_passProfiler_tt" text="Skriver vad Distribution Reduxs timpassage kostar till log.txt, och hur många världsskanningar den gjorde. Lämna på Endast långsamma pass - den är tyst om en timpassage tar längre än 150ms. Byt till Varje pass om du blir ombedd att skicka en prestandarapport: då loggas två rader varje spel-timme, vilket är vad som låter en frisk gård jämföras med en långsam. Detta är samma inställning som på Distribution Reduxs egen sida, och att endera är på aktiverar den."/>
         <text name="ar_set_prof_off"        text="Av"/>
@@ -502,7 +560,7 @@
         <text name="ar_set_needsDR"         text="(kräver Distribution Redux)"/>
         <text name="ar_unit_litre"          text=" L"/>
         <text name="ar_unit_kilolitre"      text=" kL"/>
-        <text name="ar_set_needsDR_tt"      text="Denna inställning kräver Distribution Redux, som inte är installerad (eller är en äldre version utan funktionen). Animal Redux fungerar utan det - endast detta alternativ är inte tillgängligt. Ditt val har sparats och kommer att återställas så snart Distribution Redux finns tillgängligt."/>
+        <text name="ar_set_needsDR_tt"      text="Denna inställning kräver Distribution Redux, som inte är installerad (eller är en äldre version utan funktionen). Husbandry Redux fungerar utan det - endast detta alternativ är inte tillgängligt. Ditt val har sparats och kommer att återställas så snart Distribution Redux finns tillgängligt."/>
 
         <!-- Bekräftelsen som visas när Auto-handlaren stängs av. Den NAMNGER
              antalen, eftersom "detta kommer att ta bort saker" inte är en fråga en
